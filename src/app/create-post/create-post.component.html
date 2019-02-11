@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+  <h1>Crear nuevo post</h1>
+  <div class="panel-body">
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="form-group">
+        <label for="name">Titulo</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          class="form-control"
+          ngModel
+          required
+          #nameCtrl="ngModel"
+        />
+        <label class="label-dander" *ngIf="nameCtrl.invalid && nameCtrl.touched"
+          >Por favor entre el titulo del post</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="name">Body</label>
+        <input
+          type="text"
+          id="body"
+          name="body"
+          class="form-control"
+          ngModel
+          required
+          #nameCtrl="ngModel"
+        />
+        <label class="label-dander" *ngIf="nameCtrl.invalid && nameCtrl.touched"
+          >Por favor entre el body del post</label
+        >
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="form.invalid">
+        Agregar Post
+      </button>
+    </form>
+  </div>
+</div>

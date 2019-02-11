@@ -1,0 +1,15 @@
+<div class="">
+  <div class="card">
+    <div class="card-header">
+      {{ post.title }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Body</h5>
+      <p class="card-text">{{ post.body }}</p>
+      <a routerLink="/detail-post/{{ post.id }}" class="btn btn-primary"
+        >Detail</a
+      >
+    </div>
+  </div>
+</div>
+<br />

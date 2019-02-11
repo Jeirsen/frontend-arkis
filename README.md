@@ -1,6 +1,9 @@
-# PostsPwa
+# Posts Arkis Prueba Tecnica
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+clonar el repositorio a su equipo local
+en la ruta del projecto correr npm install para instalar las dependencias
+ejecutar el paso ## Development server
 
 ## Development server
 
